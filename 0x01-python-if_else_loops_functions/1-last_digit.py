@@ -3,6 +3,9 @@ import random
 number = random.randint(-10000, 10000)
 lastdig = abs(number) % 10
 
+if number <= 0:
+    lastdig = lastdig * -1
+
 if lastdig > 5:
     message = "greater than 5"
 elif lastdig == 0:
