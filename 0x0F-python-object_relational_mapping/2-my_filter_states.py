@@ -10,7 +10,7 @@ if __name__ == '__main__':
     password = argv[2]
     database = argv[3]
     name = argv[4]
-    sql  = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(state_name)
+    sql  = "SELECT * FROM states WHERE name LIKE BINARY '{}' ORDER BY id ASC".format(xname)
 
     db = MySQLdb.connect(host="localhost", port=3306, user=username, passwd=password, db=database)
 
