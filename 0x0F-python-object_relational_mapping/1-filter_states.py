@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" Script that list all states from a database """
+""" Script that lists all states with a name starting with N (upper N) from the database """
 
 import MySQLdb
 from sys import argv
@@ -16,7 +16,7 @@ if __name__ == '__main__':
     cur.execute("SELECT * FROM states ORDER BY id ASC")
     rows = cur.fetchall()
     for row in rows:
-        if row[1][0] = "N":
+        if row[1][0] = 'N':
             print(row)
     cur.close()
     db.close()
