@@ -1,7 +1,7 @@
 #!/usr/bin/node
 // Script that prints the addition of 2 integers
 
-function add(a, b) {
+function add (a, b) {
   const num1 = parseInt(a);
   const num2 = parseInt(b);
   if ((num1 * 1 !== num1) || (num2 * 1 !== num2)) {
