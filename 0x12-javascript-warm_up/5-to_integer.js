@@ -5,5 +5,5 @@ const argument = parseInt(process.argv[2]);
 if (argument * 1 === argument) {
   console.log('My number: ' + argument);
 } else {
-  console.log('Not number');
+  console.log('Not a number');
 }
