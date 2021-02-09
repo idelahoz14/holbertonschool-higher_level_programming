@@ -2,11 +2,11 @@
 // function that returns the reversed version of a list
 
 exports.esrever = function (list) {
-  const list_return = [];
+  const x = [];
 
   for (let i = (list.length - 1); i >= 0; i--) {
-    list_return.push(list[i]);
+    x.push(list[i]);
   }
 
-  return (list_return);
+  return (x);
 };
